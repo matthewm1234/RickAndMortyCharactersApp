@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        android:layout_centerHorizontal="true">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:id="@+id/character_image"
+        android:src="@mipmap/ic_launcher"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/character_image"
+        android:padding="5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matthew"
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status:"
+            android:id="@+id/status"
+            android:layout_below="@+id/name"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alive"
+            android:id="@+id/status_value"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/status"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Species:"
+            android:id="@+id/species"
+            android:layout_below="@+id/status"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Single"
+            android:id="@+id/species_value"
+            android:layout_below="@+id/status"
+            android:layout_toRightOf="@+id/species"
+            android:layout_marginTop="4dp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>
