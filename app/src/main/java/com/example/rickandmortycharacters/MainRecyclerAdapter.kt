@@ -19,6 +19,7 @@ class MainRecyclerAdapter(private val context:Context, private val charaters :Li
             Glide.with(context)
                 .load(character.characterImage)
                 .into(binding.characterImage)
+
         }
     }
 
